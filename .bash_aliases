@@ -33,6 +33,8 @@ alias gfx='git commit --fixup=HEAD'
 alias gsh='git show'
 alias gd='git diff'
 alias gb='git branch'
+# https://stackoverflow.com/questions/1657017/how-to-squash-all-git-commits-into-one
+alias groot='git rebase --root -i'
 
 # Navigation
 alias to-win='cd /mnt/c/Users/gkk'
