@@ -35,6 +35,7 @@ alias gd='git diff'
 alias gb='git branch'
 # https://stackoverflow.com/questions/1657017/how-to-squash-all-git-commits-into-one
 alias groot='git rebase --root -i'
+alias gini='git init && git add . && git commit -m "Initial commit"
 
 # Navigation
 alias to-win='cd /mnt/c/Users/gkk'
@@ -51,6 +52,6 @@ alias lsa='ls -la'
 alias la='ls -la'
 
 # shell config aliases
-alias refresh_bash='source .bashrc'
-alias refresh_zsh='source .zshrc'
+alias refresh_bash='source ~/.bashrc'
+alias refresh_zsh='source ~/.zshrc'
 
