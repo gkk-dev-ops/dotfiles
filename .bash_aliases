@@ -21,6 +21,7 @@ alias nano='nvim'
 alias ali='nvim ~/.bash_aliases'
 
 # Git aliases
+alias ghelp='cat ~/.bash_aliases | grep git'
 alias gs='git status'
 alias gsu='git submodule update'
 alias ga='git add .'
@@ -35,7 +36,7 @@ alias gd='git diff'
 alias gb='git branch'
 # https://stackoverflow.com/questions/1657017/how-to-squash-all-git-commits-into-one
 alias groot='git rebase --root -i'
-alias gini='git init && git add . && git commit -m "Initial commit"
+alias gini='git init && git add . && git commit -m "Initial commit"'
 
 # Navigation
 alias to-win='cd /mnt/c/Users/gkk'
