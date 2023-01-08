@@ -76,6 +76,7 @@ prettyjson_w() {
 }
 
 alias d='docker'
+alias g='git'
 alias k='kubectl'
 
 alias ..='cd ..'
