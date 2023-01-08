@@ -37,6 +37,7 @@ alias gb='git branch'
 # https://stackoverflow.com/questions/1657017/how-to-squash-all-git-commits-into-one
 alias groot='git rebase --root -i'
 alias gini='git init && git add . && git commit -m "Initial commit"'
+alias gck='git checkout'
 
 # Navigation
 alias to-win='cd /mnt/c/Users/gkk'
@@ -52,7 +53,30 @@ alias sl='ls'
 alias lsa='ls -la'
 alias la='ls -la'
 
+# mac specific aliases
+alias finder='open'
+
 # shell config aliases
 alias refresh_bash='source ~/.bashrc'
 alias refresh_zsh='source ~/.zshrc'
+alias warp='open /Applications/Warp.app'
+alias getCommand='type'
+
+# https://stackoverflow.com/a/1920585
+prettyjson_s() {
+    echo "$1" | python -m json.tool
+}
+
+prettyjson_f() {
+    python -m json.tool "$1"
+}
+
+prettyjson_w() {
+    curl "$1" | python -m json.tool
+}
+
+alias d='docker'
+alias k='kubectl'
+
+alias ..='cd ..'
 

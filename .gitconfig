@@ -1,3 +1,10 @@
 [user]
 	name = gkk
 	email = gkk.dev.ops@gmail.com
+[alias]
+	ac = !git add -A && git commit -m
+	acp = !git add -A && git commit -m "$1" && git push && :
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
