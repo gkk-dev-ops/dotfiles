@@ -27,6 +27,8 @@ alias gsu='git submodule update'
 alias ga='git add .'
 alias gpu='git push'
 alias gpl='git pull'
+alias gm='git commit'
+alias gam='git commit --amend'
 alias gmm='git commit -m'
 alias gll='git log --oneline -n'
 alias gl='git log --oneline -n 5'
@@ -81,3 +83,6 @@ alias k='kubectl'
 
 alias ..='cd ..'
 
+# aliases for working with virtual enviroments
+alias dac='deactivate'
+alias act='source .venv/bin/activate'
