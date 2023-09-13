@@ -8,6 +8,7 @@ alias cls='clear'
 alias CLS='clear'
 alias py='python3'
 alias python='python3'
+alias pip='pip3'
 alias vi='nvim'
 alias vim='nvim'
 alias nano='nvim'
@@ -21,6 +22,7 @@ alias gal='git add .'
 alias ga='git add'
 alias gpu='git push'
 alias gpl='git pull'
+alias gpl-r='git pull --rebase'
 alias gm='git commit'
 alias gam='git commit --amend'
 alias gmm='git commit -m'
@@ -35,6 +37,11 @@ alias gb='git branch'
 alias groot='git rebase --root -i'
 alias gini='git init && git add . && git commit -m "Initial commit"'
 alias gck='git checkout'
+alias gst='git stash'
+alias gsl='git stash list'
+alias gsa='git stash apply'
+alias gss='git stash save'
+alias gsp='git stash pop'
 # show combined sum of git changes in last n commits
 alias stat='git diff --stat HEAD~1..HEAD'
 alias stat5="git diff --stat HEAD~5..HEAD"
@@ -96,5 +103,20 @@ alias k='kubectl'
 alias ..='cd ..'
 
 # aliases for working with virtual enviroments
-alias dac='deactivate'
-alias act='source .venv/bin/activate'
+alias venv-create='python -m venv venv'
+alias venv-dac='deactivate'
+alias venv-act='source venv/bin/activate'
+
+alias excel="open /Applications/Microsoft\ Excel.app"
+alias word="open /Applications/Microsoft\ Word.app"
+alias powerpoint="open /Applications/Microsoft\ PowerPoint.app"
+alias teams="open /Applications/Microsoft\ Teams.app"
+alias f='finder'
+alias chrome='open /Applications/Google\ Chrome.app'
+
+# Service helpers
+alias service-mongodb='docker run -p 27017:27017 --name mongo -d mongo'
+
+alias isDnsIssue="python3 $HOME/bin/isLocalDnsIssue.py"
+alias read_qr_code="python3 $HOME/bin/read_qr_code.py"
+alias myPubKey="curl https://github.com/gkk-dev-ops.keys"

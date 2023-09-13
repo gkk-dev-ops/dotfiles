@@ -30,3 +30,8 @@ fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 neofetch
 . "$HOME/.cargo/env"
+
+# Setting PATH for Python 3.11
+# The original version is saved in .profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:${PATH}"
+export PATH

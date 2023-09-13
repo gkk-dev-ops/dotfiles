@@ -1,12 +1,4 @@
 #!/bin/bash
-echo "Welcome to:"
-echo '        #      #                             m'
-echo '  mmmm  #   m  #   m          mmm    mmm   mm#mm  m   m  mmmm'
-echo ' #" "#  # m"   # m"          #   "  #"  #    #    #   #  #" "#'
-echo ' #   #  #"#    #"#            """m  #""""    #    #   #  #   #'
-echo ' "#m"#  #  "m  #  "m         "mmm"  "#mm"    "mm  "mm"#  ##m#"'
-echo '  m  #                                                   #'
-echo '   ""                                                    "'
 
 # change default shell
 chsh -s /bin/bash
@@ -18,6 +10,8 @@ mkdir "$HOME/bin"
 xcode-select --install
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/gkk/.profile
+# Following line should append profile configuration, not be evaluated at this script runtime
+# shellcheck disable=SC2016
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/gkk/.profile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew analytics off
@@ -30,3 +24,4 @@ brew install neofetch
 # install brew packages
 brew install gcc
 brew install python3
+brew install shellcheck

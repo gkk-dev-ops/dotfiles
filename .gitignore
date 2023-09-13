@@ -2,3 +2,4 @@ id_rsa
 *history*
 known_hosts
 .DS_Store
+.env

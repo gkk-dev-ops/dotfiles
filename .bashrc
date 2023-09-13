@@ -122,3 +122,14 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# User set enviroment variables
+# Access tokens
+DOCKER_ACCESS_TOKEN=""
+GITLAB_ACCESS_TOKEN=""
+OPENAI_ACCESS_TOKEN=""

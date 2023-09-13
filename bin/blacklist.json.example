@@ -1,0 +1,12 @@
+// Example of files you'd like to ommit by changeKeys scripts. File should be
+// stored in $HOME/.ssh
+{
+    "blacklist": [
+        "known_hosts",
+        "blacklist.json",
+        "changeKeys.py",
+        "config",
+        "known_hosts.old",
+        ".DS_Store"
+    ]
+}
